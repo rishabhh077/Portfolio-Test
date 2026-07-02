@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<meta name="description" content="Projects by Rishabh Prajapati — web, AI, and security projects." />
+	<title>Projects — Rishabh Prajapati</title>
+	<style>
+		:root {
+			--bg: #071428;
+			--card: #0b1220;
+			--accent: #7c3aed;
+			--muted: #94a3b8
+		}
+
+		* {
+			box-sizing: border-box
+		}
+
+		body {
+			margin: 0;
+			font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Arial;
+			background: linear-gradient(180deg, #071029, #071428);
+			color: #e6eef8
+		}
+
+		header {
+			padding: 18px 24px;
+			display: flex;
+			align-items: center;
+			justify-content: space-between
+		}
+
+		.brand {
+			display: flex;
+			align-items: center;
+			gap: 12px
+		}
+
+		.logo {
+			width: 48px;
+			height: 48px;
+			border-radius: 10px;
+			background: linear-gradient(135deg, var(--accent), #06b6d4);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-weight: 700
+		}
+
+		nav ul {
+			display: flex;
+			gap: 12px;
+			margin: 0;
+			padding: 0;
+			list-style: none
+		}
+
+		nav a {
+			color: var(--muted);
+			text-decoration: none;
+			padding: 8px 12px;
+			border-radius: 8px
+		}
+
+		nav a:hover {
+			color: #fff
+		}
+
+		main {
+			max-width: 1100px;
+			margin: 30px auto;
+			padding: 0 20px
+		}
+
+		h1 {
+			margin: 0
+		}
+
+		.grid {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+			gap: 18px;
+			margin-top: 22px
+		}
+
+		.card {
+			background: var(--card);
+			padding: 18px;
+			border-radius: 12px;
+			border: 1px solid rgba(255, 255, 255, 0.03)
+		}
+
+		.muted {
+			color: var(--muted)
+		}
+
+		.project-actions {
+			margin-top: 12px
+		}
+
+		.btn {
+			background: var(--accent);
+			color: white;
+			padding: 8px 12px;
+			border-radius: 8px;
+			text-decoration: none
+		}
+
+		footer {
+			margin: 40px 0 30px 0;
+			text-align: center;
+			color: var(--muted)
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+		<div class="brand">
+			<div class="logo">RP</div>
+			<div>
+				<div style="font-weight:700">Rishabh Prajapati</div>
+				<div style="font-size:12px;color:var(--muted)">Web Developer • AI • Cybersecurity</div>
+			</div>
+		</div>
+		<nav aria-label="Main navigation">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="projects.html">Projects</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<section aria-labelledby="projects-title">
+			<h1 id="projects-title">Projects</h1>
+			<p class="muted">A selection of projects showcasing web development, AI experiments, and security-focused
+				work.</p>
+
+			<div class="grid">
+				<article class="card">
+					<h3>Portfolio Website</h3>
+					<p class="muted">A responsive personal website to showcase skills, projects, and contact details.
+					</p>
+					<div class="project-actions"><a class="btn" href="#">View Project</a></div>
+				</article>
+
+				<article class="card">
+					<h3>MISA Chatbot</h3>
+					<p class="muted">Rule-based and AI-powered chatbot built using Python with conversational flows.</p>
+					<div class="project-actions"><a class="btn" href="#">View Project</a></div>
+				</article>
+
+				<article class="card">
+					<h3>Task Manager App</h3>
+					<p class="muted">A productivity app to create, update, and track tasks with a clean UI.</p>
+					<div class="project-actions"><a class="btn" href="#">View Project</a></div>
+				</article>
+			</div>
+		</section>
+
+		<footer>
+			<p>© 2026 Rishabh Prajapati · Built with care.</p>
+		</footer>
+	</main>
+</body>
+
+</html>

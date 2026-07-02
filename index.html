@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description"
+        content="Rishabh Prajapati — Web developer, AI enthusiast and cybersecurity analyst. Explore projects and certifications." />
+    <title>Rishabh Prajapati — Portfolio</title>
+    <style>
+        :root {
+            --bg: #0f1724;
+            --card: #0b1220;
+            --accent: #7c3aed;
+            --muted: #94a3b8;
+            --glass: rgba(255, 255, 255, 0.03);
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        body {
+            margin: 0;
+            font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+            background: linear-gradient(180deg, #071029 0%, #071428 100%);
+            color: #e6eef8;
+            line-height: 1.5
+        }
+
+        header {
+            padding: 18px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: transparent
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 12px
+        }
+
+        .logo {
+            width: 48px;
+            height: 48px;
+            border-radius: 10px;
+            background: linear-gradient(135deg, var(--accent), #06b6d4);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700
+        }
+
+        nav ul {
+            display: flex;
+            gap: 12px;
+            margin: 0;
+            padding: 0;
+            list-style: none
+        }
+
+        nav a {
+            color: var(--muted);
+            text-decoration: none;
+            padding: 8px 12px;
+            border-radius: 8px
+        }
+
+        nav a:hover {
+            background: var(--glass);
+            color: #fff
+        }
+
+        main {
+            max-width: 1100px;
+            margin: 30px auto;
+            padding: 0 20px
+        }
+
+        .hero {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            padding: 28px;
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), transparent);
+            border-radius: 14px
+        }
+
+        .hero h1 {
+            margin: 0;
+            font-size: clamp(28px, 4vw, 44px)
+        }
+
+        .lead {
+            color: var(--muted);
+            margin: 8px 0
+        }
+
+        .cta {
+            margin-top: 12px
+        }
+
+        .btn {
+            background: var(--accent);
+            color: white;
+            padding: 10px 14px;
+            border-radius: 10px;
+            text-decoration: none
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 18px;
+            margin-top: 22px
+        }
+
+        .card {
+            background: var(--card);
+            padding: 18px;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.03)
+        }
+
+        .project h3 {
+            margin: 0 0 8px 0
+        }
+
+        footer {
+            margin: 40px 0 30px 0;
+            text-align: center;
+            color: var(--muted)
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 8px
+        }
+
+        .skill {
+            background: rgba(255, 255, 255, 0.03);
+            padding: 6px 10px;
+            border-radius: 999px;
+            color: var(--muted);
+            font-size: 14px
+        }
+
+        @media(min-width:800px) {
+            .hero {
+                grid-template-columns: 1fr 360px
+            }
+        }
+
+        a.external {
+            color: var(--accent)
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="brand">
+            <div class="logo">RP</div>
+            <div>
+                <div style="font-weight:700">Rishabh Prajapati</div>
+                <div style="font-size:12px;color:var(--muted)">Web Developer • AI • Cybersecurity</div>
+            </div>
+        </div>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="home" aria-labelledby="intro-title">
+            <div>
+                <h1 id="intro-title">Hi — I'm Rishabh</h1>
+                <p class="lead">I build web apps, experiment with AI, and explore cybersecurity.</p>
+                <p id="element" class="lead" aria-live="polite"></p>
+                <div class="cta">
+                    <a class="btn" href="projects.html">See Projects</a>
+                    <a style="margin-left:8px;color:var(--muted)" href="contact.html">Get in touch</a>
+                </div>
+                <p style="color:var(--muted);margin-top:14px">Explore my projects and certifications below.</p>
+            </div>
+
+            <aside class="card">
+                <h3>Quick Skills</h3>
+                <div class="skills">
+                    <span class="skill">HTML</span>
+                    <span class="skill">CSS</span>
+                    <span class="skill">JavaScript</span>
+                    <span class="skill">Python</span>
+                    <span class="skill">AI</span>
+                    <span class="skill">Cybersecurity</span>
+                </div>
+                <h4 style="margin-top:16px">Certifications</h4>
+                <ul style="color:var(--muted);padding-left:18px;margin:6px 0">
+                    <li>Certified AppSec Practitioner</li>
+                    <li>Cloud Security (AWS)</li>
+                    <li>Network Security Practitioner</li>
+                </ul>
+            </aside>
+        </section>
+
+        <section id="projects" style="margin-top:22px">
+            <h2 style="margin:0 0 12px 0">Projects</h2>
+            <div class="grid">
+                <article class="card project">
+                    <h3>MISA Chatbot</h3>
+                    <p class="lead" style="margin:6px 0;color:var(--muted)">Rule-based and AI-powered chatbot built in
+                        Python.</p>
+                    <p><a class="external" href="projects.html">Learn more →</a></p>
+                </article>
+
+                <article class="card project">
+                    <h3>Portfolio Website</h3>
+                    <p class="lead" style="margin:6px 0;color:var(--muted)">This responsive portfolio built with HTML,
+                        CSS and JS.</p>
+                    <p><a class="external" href="projects.html">Learn more →</a></p>
+                </article>
+            </div>
+        </section>
+
+        <section id="about" style="margin-top:22px">
+            <h2>About</h2>
+            <div class="card" style="margin-top:12px">
+                <p>I am a passionate developer interested in web development, artificial intelligence, and software
+                    engineering. I studied at Doon Bharti Public School (CBSE) where I focused on the Science stream and
+                    developed strong critical thinking and work habits.</p>
+                <p style="color:var(--muted)">I enjoy building practical projects, learning new technologies, and
+                    applying security-minded practices to software development.</p>
+            </div>
+        </section>
+
+        <section id="contact" style="margin-top:22px">
+            <h2>Contact</h2>
+            <div class="card" style="margin-top:12px">
+                <p>Email: <a class="external"
+                        href="mailto:rishabhprajapati2606@gmail.com">rishabhprajapati2606@gmail.com</a></p>
+                <p>LinkedIn: <a class="external"
+                        href="https://linkedin.com/in/rishabh-prajapati-6440b8364">linkedin.com/in/rishabhpra</a></p>
+            </div>
+        </section>
+
+        <footer>
+            <p>© 2026 Rishabh Prajapati · Built with care.</p>
+        </footer>
+    </main>
+
+    <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
+    <script>
+        const typed = new Typed('#element', {
+            strings: ['Web Developer', 'Python Programmer', 'AI Enthusiast', 'Cybersecurity Analyst'],
+            loop: true,
+            typeSpeed: 50,
+            backSpeed: 30,
+            backDelay: 1200,
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="About Rishabh Prajapati — skills, experience and certifications." />
+    <title>About — Rishabh Prajapati</title>
+    <style>
+        :root {
+            --bg: #071428;
+            --card: #0b1220;
+            --accent: #7c3aed;
+            --muted: #94a3b8
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        body {
+            margin: 0;
+            font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Arial;
+            background: linear-gradient(180deg, #071029, #071428);
+            color: #e6eef8
+        }
+
+        header {
+            padding: 18px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 12px
+        }
+
+        .logo {
+            width: 48px;
+            height: 48px;
+            border-radius: 10px;
+            background: linear-gradient(135deg, var(--accent), #06b6d4);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700
+        }
+
+        nav ul {
+            display: flex;
+            gap: 12px;
+            margin: 0;
+            padding: 0;
+            list-style: none
+        }
+
+        nav a {
+            color: var(--muted);
+            text-decoration: none;
+            padding: 8px 12px;
+            border-radius: 8px
+        }
+
+        nav a:hover {
+            color: #fff
+        }
+
+        main {
+            max-width: 1100px;
+            margin: 30px auto;
+            padding: 0 20px
+        }
+
+        .hero {
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), transparent);
+            padding: 22px;
+            border-radius: 12px
+        }
+
+        .card {
+            background: var(--card);
+            padding: 18px;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.03);
+            margin-top: 16px
+        }
+
+        h1,
+        h2 {
+            margin: 0;
+            color: #fff
+        }
+
+        .lead {
+            color: var(--muted);
+            margin-top: 8px
+        }
+
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 12px;
+            margin-top: 12px
+        }
+
+        .skill {
+            background: rgba(255, 255, 255, 0.03);
+            padding: 12px;
+            border-radius: 10px;
+            color: var(--muted)
+        }
+
+        ul.experience {
+            color: var(--muted);
+            padding-left: 18px;
+            margin-top: 8px
+        }
+
+        footer {
+            margin: 40px 0 30px 0;
+            text-align: center;
+            color: var(--muted)
+        }
+
+        a.external {
+            color: var(--accent)
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="brand">
+            <div class="logo">RP</div>
+            <div>
+                <div style="font-weight:700">Rishabh Prajapati</div>
+                <div style="font-size:12px;color:var(--muted)">Web Developer • AI • Cybersecurity</div>
+            </div>
+        </div>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" aria-labelledby="about-title">
+            <h1 id="about-title">About Me</h1>
+            <p class="lead">Passionate developer focused on web apps, AI experiments and cybersecurity.</p>
+            <div class="card">
+                <h2>Who Am I?</h2>
+                <p class="lead" style="margin-top:8px;color:var(--muted)">Enthusiastic B.Tech Computer Science student
+                    specializing in Cybersecurity. I enjoy practical projects in web development and AI, applying
+                    secure-by-design principles to my work.</p>
+            </div>
+
+            <div class="card">
+                <h2>My Skills</h2>
+                <div class="skills">
+                    <div class="skill">HTML • CSS • JavaScript</div>
+                    <div class="skill">Python • Django • Flask</div>
+                    <div class="skill">Node.js • Express</div>
+                    <div class="skill">Cybersecurity • AppSec • Cloud</div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>Experience & Achievements</h2>
+                <ul class="experience">
+                    <li><strong>TECH CONTRIBUTOR</strong> — GirlScript Summer of Code (GSSoC) 2025</li>
+                    <li><strong>WEB DEVELOPMENT</strong> — Apna College (2025)</li>
+                    <li><strong>SUPER CONTRIBUTOR</strong> — Hacktoberfest 2025</li>
+                </ul>
+
+                <h2>Achievements</h2>
+                <ul class="experience">
+                    <li><strong>Certified AppSec Practitioner</strong>15-Oct-2025</li>
+                    <li><strong>Certified Cloud Security Practitioner -
+                            AWS</strong>15-Oct-2025</li>
+                    <li><strong>Certified Network Security Practitioner</strong>15-Oct-2025</li>
+                    <li><strong>Ai Appreciate 2025</strong> 31 July 2025</li>
+                    <li><strong>Ai Aware 2025</strong>31 July 2025</li>
+                    <li><strong>Cybersecurity Analyst Job Simulation</strong>04-Jun-2026</li>
+                    <li><strong>EY Technology Risk Virtual Job
+                            Simulation</strong>04-Jun-2026</li>
+                    <li><strong>Robotics and Controls Job Simulation</strong>04-Jun-2026</li>
+                </ul>
+            </div>
+        </section>
+
+        <footer>
+            <p>© 2026 Rishabh Prajapati · Built with care.</p>
+        </footer>
+    </main>
+</body>
+
+</html>
